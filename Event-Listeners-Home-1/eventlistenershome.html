@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENT LISTENERS HOME</title>
+</head>
+  <style>
+    #abc {
+      background-color: #45d638;
+      color: white
+      
+    }
+    
+    #abc.clicked {
+      background-color: #ec4444;
+    }
+  
+    .ml{margin-left: 200px;}
+    .w500{width: 500px;}
+
+  </style>
+<body>
+  
+<h1 id="fm">FILIP</h1>
+
+<h3 id="fm">TEST</h3>
+
+<h5 id="fm">CODE</h5>
+
+<script>
+
+
+
+// const hone = document.createElement("h1")
+// hone.innerText="FILIP"
+// const htwo = document.createElement("h1")
+// htwo.innerText="FILIP"
+// const hthree = document.createElement("h1")
+// hthree.innerText="FILIP"
+// const hfour = document.createElement("h1")
+// hfour.innerText="FILIP"
+// const hfive = document.createElement("h1")
+// hfive.innerText="FILIP"
+
+
+
+// document.body.appendChild(hone)
+// document.body.appendChild(htwo)
+// document.body.appendChild(hthree)
+// document.body.appendChild(hfour)
+// document.body.appendChild(hfive)
+
+// let fm = document.getElementsByTagName("h1")
+// for (let i = 0; i < fm.length; i++) {
+//   const element = fm[i];
+//   element.style.backgroundColor = "red"
+  
+// }
+// let fil  =  fm[0].innerText = "MILOSEVSKI"    //// OVDE DA MENJAM IME
+// console.log(fil);
+
+
+
+
+
+/////////////////////////////////// ex 2
+
+let hone = document.createElement("h1")
+hone.innerText = "FICO"
+hone.color = "pink"
+hone.backgroundColor = "red"
+hone.addEventListener("click",changes)
+
+
+let htwo = document.createElement("h2")
+htwo.innerText = "FICO"
+htwo.color = "green"
+htwo.backgroundColor = "yellow"
+htwo.addEventListener("click",changes)
+
+
+let hfour = document.createElement("h4")
+hfour.innerText = "FICO"
+hfour.color = "orange"
+hfour.backgroundColor = "gray"
+hfour.addEventListener("click",changes)
+
+function changes() {
+  this.style.backgroundColor = this.backgroundColor
+  this.style.color = this.color;
+}
+
+document.body.appendChild(hone)
+document.body.appendChild(htwo)
+document.body.appendChild(hfour)
+
+
+
+
+
+//////////////// ex3
+
+let abc = document.getElementById("fm")
+for (let i = 0; i < abc.length; i++) {
+  const element = abc[i];
+  console.log(element[i]);
+}
+
+// abc.addEventListener("click",()=>{
+//   abc.classList.toggle("clicked")
+// })
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listeners Home 3</title>
+</head>
+<style>
+#testbutton {
+  background-color: #45d638;
+  color: white;
+  padding: 50px;
+  width: 200px; 
+  border-radius: 50px; 
+}
+
+#testbutton.clicked {
+  background-color: #ec4444;
+  color: aqua;
+}
+
+.ml{margin-left: 200px;}
+.w500{width: 500px;}
+
+#pro{
+  padding: 30px 50px;
+  border-radius: 50px;
+  color: #38b6d6;
+  background-color: rgb(54, 66, 56);
+}
+
+#pro.clicked {
+  color: #d3ec44;
+  background-color: rgb(30, 142, 194);
+}
+
+</style>
+<button id="testbutton">Toggle</button>
+
+<br><br><br><br><br>
+
+
+<div class="budiv">
+<button id="pro">FILIP</button>
+<h1 id="pro">MILO</h1>
+</div>
+<script>
+ 
+ let testButton = document.q("testbutton");
+
+testButton.addEventListener("click", () => {
+testButton.classList.toggle('clicked');
+})
+
+let fm = document.getElementById("pro");
+for (let i = 0; i < fm.length; i++) {
+  const element = fm[i];
+  fm[i].addEventListener("click", () => {
+  fm[i].classList.toggle("clicked")
+})
+
+}
+
+</script>
+</body>
+</html>

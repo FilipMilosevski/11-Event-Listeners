@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 11.8</title>
+</head>
+<body>
+  
+  <div id="ex8">
+    <input type="text" id="inpone">
+    <br>  
+    <input type="text" id="inptwo">
+    <p id="output"></p>
+  </div>
+
+  <script>
+
+    let output = document.getElementById("output")
+    let ex = document.getElementById("ex8")
+    let inputs = document.querySelectorAll("input")
+
+    for (const el of inputs) {
+      el.addEventListener("keyup",function (event) {
+        console.log(event.key);
+      })
+      el.addEventListener("keydown",function (event) {
+        console.log(typeof event.key);
+        if (!isNaN(event.key)){
+        output.textContent += event.key;
+      }
+      });
+      el.addEventListener("paste",function(event) {
+        console.log("paste");
+        console.log(this.value);
+      });
+     
+    }
+
+
+  </script>
+
+
+</body>
+</html>

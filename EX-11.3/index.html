@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 11.3</title>
+</head>
+<body>
+  
+
+<script>
+////// object so console.dir        text so console.log
+
+
+
+// document.body.onload  = function (event) {}         moze i vaka
+
+
+function message(text,object) {
+  console.log(text,object);
+}
+
+
+
+window.addEventListener("DOMContentLoaded",(event)=>{
+  message("DOCUMENT READY",event)
+})
+
+window.onload = event => {
+  message("WINDOW READY" , event)
+}
+
+document.addEventListener("DOMContentLoaded",(event)=>{
+  message("DOCUMENT READY",event)
+})
+
+
+</script>
+
+
+</body>
+</html>

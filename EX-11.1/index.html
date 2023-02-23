@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 11.1</title>
+</head>
+
+<body>
+  <!-- <h1>TEST</h1> -->
+  <!-- <p>FILIP</p> -->
+
+  <div id="fm">
+    <h1>TEST</h1>
+    <p>MONDAY</p>
+  </div>
+
+
+  <script>
+    // document.body.style.color = "red"; ///// menjanje boja na tekst
+    let a = document.getElementById("fm");
+    a.addEventListener("click", filip);
+
+    function filip() {
+      if (a.style.backgroundColor === "black") {
+        a.style.backgroundColor = "white"
+        a.style.color = "black"
+      } else {
+        a.style.backgroundColor = "black";
+        a.style.color = "white"
+      }
+
+    }
+
+// let a = document.getElementById("fm")
+// a.addEventListener("click", function filip() {
+//   a.style.backgroundColor = "black";
+//   a.style.color = "white";
+
+//   if (a.style.backgroundColor = "black") {
+//     a.style.backgroundColor = "white"
+//     a.style.color = "black"
+//   } else {
+//     a.style.backgroundColor = "black";
+//     a.style.color = "white"
+//   }
+// })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listeners</title>
+</head>
+
+<style>
+    .demo {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: rgb(129, 128, 204);
+    color: rgb(192, 204, 173);
+  }
+
+  .tclass {
+    background-color: rgb(105, 105, 105);
+    color: rgb(177, 221, 15);
+  }
+
+  .t2 {
+    background-color: green;
+    color: black;
+  }
+
+  .new-class {
+    background: red;
+    color: blue;
+  }
+  
+.fm {
+display: flex;
+justify-content: space-around;
+flex-direction: row;  
+flex-wrap: wrap;
+
+} 
+#test{
+width: 100px;
+height: 100px;
+}
+
+.dd{
+  background-color: gray;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+</style>
+
+<body>
+  
+
+<div class="dd">
+  <td><button id="test" class="demo">16</button></td>
+  <td><button id="test" class="demo">17</button></td>
+  <td><button id="test" class="demo">18</button></td>
+  <td><button id="test" class="demo">19</button></td>
+  <td><button id="test" class="demo">20</button></td>
+</div>
+</tr>
+
+</table>
+<h2 id="fil1" class="tclass">FICO</h2>
+<script>
+ 
+ let btn = document.querySelectorAll("#test");
+for (let i = 0; i < btn.length; i++) {
+btn[i].addEventListener("click", function () {
+  btn[i].classList.add("demo");
+  btn[i].classList.toggle("new-class");
+});
+}
+
+let fm = document.createElement("h1");
+fm.innerText ="FILIP"
+fm.style.color = "red"
+fm.style.backgroundColor = "gray"
+fm.style.width = "500px"
+fm.style.textAlign = "center"
+document.body.appendChild(fm)
+
+let hid = document.getElementById("fil1")
+hid.addEventListener("click", function () {
+  hid.classList.add("t1")
+  hid.classList.toggle("t2")
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 11.4</title>
+</head>
+<body>
+  
+
+
+  <script>
+
+    let mouseEvent = document.createElement("div")
+    mouseEvent.style.height = "100px"
+    mouseEvent.style.width = "100px"
+    mouseEvent.style.backgroundColor = "pink"
+
+
+    function changeBGC(colorName, element) {
+      console.log(colorName,element);
+      console.log(colorName);
+      element.style.backgroundColor = colorName;
+    }
+
+    
+
+    mouseEvent.addEventListener("mouseover", function () {
+           changeBGC("green", this);
+        });
+        mouseEvent.addEventListener("mouseup", function () {
+           changeBGC("red", this);
+        });
+        mouseEvent.addEventListener("mousedown", function () {
+           changeBGC("blue", this);
+        });
+        mouseEvent.addEventListener("mouseout", function () {
+           changeBGC("yellow", this);
+        });
+
+    document.body.appendChild(mouseEvent)
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

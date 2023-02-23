@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 11.2</title>
+</head>
+<body>
+  
+
+<div id="mydiv"></div>
+
+<script>
+/////    PRV NACIN
+ 
+const pone = document.createElement("p")
+pone.innerText = "blue";
+pone.backgroundColor = "pink"
+pone.addEventListener("click",changecolortext)
+
+const ptwo = document.createElement("p")
+ptwo.innerText = "red";
+ptwo.backgroundColor = "green"
+ptwo.addEventListener("click",changecolortext)
+
+
+
+
+function changecolortext(color) {
+  this.style.color = this.innerText;
+  this.style.backgroundColor = this.backgroundColor
+}
+
+document.body.appendChild(pone)
+document.body.appendChild(ptwo)
+
+
+/////////////////////// VTOR NACIN
+
+// const pone = document.createElement("p")
+// pone.innerText = "blue";
+// pone.backgroundColor = "pink"
+// pone.addEventListener("click",changecolortext)
+
+// const ptwo = document.createElement("p")
+// ptwo.innerText = "red";
+// ptwo.backgroundColor = "green"
+// ptwo.addEventListener("click",changecolortext)
+
+// function changecolortext() {
+//   this.style.color = this.innerText;
+//   this.style.backgroundColor = this.backgroundColor
+// }
+// document.body.appendChild(pone)
+// document.body.appendChild(ptwo)
+
+
+//////////////////    TRET    NACIN
+
+// const pone = document.createElement("p")
+// pone.innerText = "blue";
+// pone.addEventListener("click",changecolortext)
+// pone.addEventListener("click",changebackgroundcolor)
+
+// const ptwo = document.createElement("p")
+// ptwo.innerText = "red";
+// ptwo.addEventListener("click",changecolortext)
+// ptwo.addEventListener("click",changebackgroundcolor)
+
+// function changecolortext(color) {
+//   this.style.color = this.innerText;
+// }
+// function changebackgroundcolor(color) {
+//   this.style.backgroundColor = "pink"
+
+// }
+// document.body.appendChild(pone)
+// document.body.appendChild(ptwo)
+
+
+</script>
+
+
+
+</body>
+</html>
